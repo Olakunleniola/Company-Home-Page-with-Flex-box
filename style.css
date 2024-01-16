@@ -1,0 +1,292 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:wght@900&family=Nunito+Sans:wght@300;400;500;700&family=Work+Sans:wght@900&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        /* background-color: #10162f; */
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .alert {
+        display: none; 
+    }
+
+    /* HEADER SECTION */
+    header {
+        display: flex;
+        height: auto;
+        background: linear-gradient(to bottom, #258806, #000107);
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        flex-wrap: wrap;
+        position:fixed;
+        left: 0;
+        right: 0;
+    }
+
+    .logo { 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo h1 {
+        padding-left: .8rem;
+        
+    }
+
+    nav {
+        display: flex;
+        min-width: 30%;
+        justify-content: space-between;
+   
+    }
+
+    a {
+        display: block;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a:hover {
+        color: #00ffff;
+    }
+
+    .bar {
+        /* display: none; */
+        font-size: 2rem;
+        padding: .75rem;
+        position: relative;
+        display: none;
+    }
+
+    .bar-nav {
+        position: absolute;
+        font-size: 1.25rem;
+        text-align: left;    
+        padding: .35rem ;
+        /* border: 1px solid red; */
+        background: linear-gradient(to top, #1b440e, #000107);
+        right: 9px;
+        width: 10rem;
+    visibility: hidden;
+    }
+
+    .bar-nav a+a::before {
+        content: "";
+        display: block;
+        padding: .25rem;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        margin-bottom: .5rem;
+    }
+
+    .bar:hover .bar-nav  {
+        visibility: visible;
+    }
+
+
+    /* MISSION SECTION */
+
+    .mission {
+        height: auto;
+        background-image: url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1966&q=80);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+        padding: 4.5rem;
+        text-align: center;
+    }
+
+    .mission-cont{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        padding: 1.5rem;
+        background-color:rgba(0,0,0, .8);
+    }
+
+
+    .mission-cont p {
+        margin-top: 1rem;
+        line-height: 2.85rem;
+    }
+
+    /* GARAGE SECTION */
+    .garage {
+        display: flex;
+        flex-direction: column;
+        padding: 4.5rem;
+        align-items: center;
+        background:linear-gradient(10deg, #258806, #000107);
+    }
+
+
+    .cars-cont {
+        width: 80%;
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .car-card, .team-card {
+        display: flex;
+        height: 30rem;
+        margin: 0.5rem .75rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-between;
+        align-items: center;
+        width: 15.5rem;
+        /* padding: 1rem;   */
+        /* border: 1px solid; */
+        text-align: center;
+        /* background-color: #000107; */
+        
+    }
+    .car-img {
+        width: 100%;
+        height: 20rem;
+        box-shadow: -.15rem .15rem .42rem #000107;
+        /* overflow-y: hidden; */
+    }
+
+    .car-img img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .car-card button{
+        width: 50%;
+        padding: .75rem;
+        border: 2px solid #000107;
+        border-radius: .3rem;
+        font-weight: 600;
+        font-size: 1rem;
+        background: linear-gradient(20deg, #000107, #fff) ;
+        cursor: pointer;
+    }
+
+
+    /* TEAM SECTION */
+
+
+    .staff {
+        padding: 4.5rem;
+        background: #000107;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .staff h2 {
+        margin-bottom: 2rem;
+
+    }
+
+
+    .team-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-card {
+        justify-content: space-around;
+        height: auto;
+        margin: .75rem;
+    }
+
+    .team-cont {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .info {
+        margin-top: 1.25rem;
+    }
+
+    /* FOOTER SECTION */
+    footer {
+        background: linear-gradient(to top, #258806, #000107);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    footer h2 {
+        margin: .75rem;
+    }
+
+    footer h4 {
+        margin: .23rem;
+    }
+
+    footer p {
+        margin-top: .75rem;
+    }
+
+
+    /* SCREEN CONTROL */
+
+    @media only screen and (max-width: 768px) {
+        
+        nav {
+            display: none;
+        }
+        
+        .bar {
+            display: block;
+        }
+
+    }
+
+    @media only screen and (max-width: 450px) {
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        header img {
+            width: 1.7rem;
+        }
+    }
+
+    @media only screen and (max-width: 368px) {
+        header,.mission, .garage, .staff , footer {
+            display: none ;
+        }
+        
+        .alert {
+            display: block;
+            padding: 2rem;
+            color: #fff;
+            text-align: center;
+        }
+        
+        body {
+            background:#000107;      
+        }
+    }
